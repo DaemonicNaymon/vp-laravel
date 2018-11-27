@@ -18,7 +18,14 @@ return [
 	'users' => [
 		'title' => 'Users',
 		'fields' => [
-			'name' => 'Name',
+			'firstname' => 'Firstname',
+			'suffix' => 'Suffix',
+			'lastname' => 'Lastname',
+			'phone_number' => 'Phone_number',
+			'street_name' => 'Street_name',
+			'street_number' => 'Street_number',
+			'postalcode' => 'Postalcode',
+			'city' => 'City',
 			'email' => 'Email',
 			'password' => 'Password',
 			'role' => 'Role',
@@ -278,5 +285,5 @@ return [
 	'qa_parse_csv' => 'Parse CSV',
 	'qa_import_data' => 'Import data',
 	'qa_imported_rows_to_table' => 'Imported :rows rows to :table table',
-	'quickadmin_title' => 'File Storage',
+	'quickadmin_title' => 'Advocatenkantoor DvS',
 ];

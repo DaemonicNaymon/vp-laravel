@@ -25,7 +25,7 @@
                             <th style="text-align:center;"><input type="checkbox" id="select-all" /></th>
                         @endcan
 
-                        <th>@lang('quickadmin.users.fields.name')</th>
+                        <th>@lang('quickadmin.users.fields.firstname')</th>
                         <th>@lang('quickadmin.users.fields.email')</th>
                         <th>@lang('quickadmin.users.fields.role')</th>
                                                 <th>&nbsp;</th>
@@ -41,7 +41,7 @@
                                     <td></td>
                                 @endcan
 
-                                <td field-key='name'>{{ $user->firstname}}&nbsp;{{$user->firstname }}</td>
+                                <td field-key='name'>{{ $user->firstname}}&nbsp;{{$user->lastname }}</td>
                                 <td field-key='email'>{{ $user->email }}</td>
                                 <td field-key='role'>{{ $user->role->title or '' }}</td>
                                                                 <td>
