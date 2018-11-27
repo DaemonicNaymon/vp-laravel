@@ -41,7 +41,7 @@
                                     <td></td>
                                 @endcan
 
-                                <td field-key='name'>{{ $user->name }}</td>
+                                <td field-key='name'>{{ $user->firstname}}&nbsp;{{$user->firstname }}</td>
                                 <td field-key='email'>{{ $user->email }}</td>
                                 <td field-key='role'>{{ $user->role->title or '' }}</td>
                                                                 <td>
