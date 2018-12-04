@@ -24,7 +24,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('suffix', trans('quickadmin.users.fields.suffix').'*', ['class' => 'control-label']) !!}
+                    {!! Form::label('suffix', trans('quickadmin.users.fields.suffix').'', ['class' => 'control-label']) !!}
                     {!! Form::text('suffix', old('suffix'), ['class' => 'form-control', 'placeholder' => '', 'required' => '']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('suffix'))
@@ -48,12 +48,60 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('phone_number', trans('quickadmin.users.fields.phone_number').'*', ['class' => 'control-label']) !!}
+                    {!! Form::label('phone number', trans('quickadmin.users.fields.phone_number').'*', ['class' => 'control-label']) !!}
                     {!! Form::tel('phone number', old('phone number'), ['class' => 'form-control', 'placeholder' => '', 'required' => '']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('phone number'))
                         <p class="help-block">
                             {{ $errors->first('phonen umber') }}
+                        </p>
+                    @endif
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('street name', trans('quickadmin.users.fields.street_name').'*', ['class' => 'control-label']) !!}
+                    {!! Form::text('street name', old('street name'), ['class' => 'form-control', 'placeholder' => 'Street Name', 'required' => '']) !!}
+                    <p class="help-block"></p>
+                    @if($errors->has('street name'))
+                        <p class="help-block">
+                            {{ $errors->first('street name') }}
+                        </p>
+                    @endif
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('street_number', trans('quickadmin.users.fields.street_number').'*', ['class' => 'control-label']) !!}
+                    {!! Form::text('street number', old('street number'), ['class' => 'form-control', 'placeholder' => '', 'required' => '']) !!}
+                    <p class="help-block"></p>
+                    @if($errors->has('street number'))
+                        <p class="help-block">
+                            {{ $errors->first('street number') }}
+                        </p>
+                    @endif
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('postalcode', trans('quickadmin.users.fields.postalcode').'*', ['class' => 'control-label']) !!}
+                    {!! Form::text('postalcode', old('postalcode'), ['class' => 'form-control', 'placeholder' => '', 'required' => '']) !!}
+                    <p class="help-block"></p>
+                    @if($errors->has('postalcode'))
+                        <p class="help-block">
+                            {{ $errors->first('postalcode') }}
+                        </p>
+                    @endif
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('city', trans('quickadmin.users.fields.city').'*', ['class' => 'control-label']) !!}
+                    {!! Form::text('city', old('city'), ['class' => 'form-control', 'placeholder' => '', 'required' => '']) !!}
+                    <p class="help-block"></p>
+                    @if($errors->has('city'))
+                        <p class="help-block">
+                            {{ $errors->first('city') }}
                         </p>
                     @endif
                 </div>

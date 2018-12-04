@@ -53,7 +53,7 @@
             <li class="{{ $request->segment(2) == 'folders' ? 'active' : '' }}">
                 <a href="{{ route('admin.folders.index') }}">
                     <i class="fa fa-gears"></i>
-                    <span class="title">@lang('quickadmin.folders.title')</span>
+                    <span class="title">@lang('quickadmin.zaken.title')</span>
                 </a>
             </li>
             @endcan

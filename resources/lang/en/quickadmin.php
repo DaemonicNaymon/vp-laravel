@@ -33,8 +33,8 @@ return [
 		],
 	],
 
-	'folders' => [
-		'title' => 'Folders',
+	'zaken' => [
+		'title' => 'Zaken',
 		'fields' => [
 			'name' => 'Name',
 			'created-by' => 'Created by',

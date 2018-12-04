@@ -13,8 +13,8 @@
                 <div class="col-md-6">
                     <table class="table table-bordered table-striped">
                         <tr>
-                            <th>@lang('quickadmin.users.fields.name')</th>
-                            <td field-key='name'>{{ $user->name }}</td>
+                            <th>@lang('quickadmin.users.fields.firstname')</th>
+                            <td field-key='name'>{{ $user->firstname }} &nbsp; {{ $user->lastname }}</td>
                         </tr>
                         <tr>
                             <th>@lang('quickadmin.users.fields.email')</th>
