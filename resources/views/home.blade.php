@@ -12,11 +12,26 @@
         </div>
     </div>
 </div>
+
 <div class="container">
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="https://laracasts.com/images/forum/robo-icon.svg?v=2" alt="Card image cap">
-        <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Voeg een advocaat toe</h5>
+                    <p class="card-text">Nieuwe advocaten doen blabla.</p>
+                    <a href="#" class="btn btn-primary">Voeg toe</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Maak een nieuwe zaak aan</h5>
+                    <p class="card-text">Lorump ipsum en andere leuken diengen</p>
+                    <a href="../../" class="btn btn-primary">Nieuwe zaak</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
