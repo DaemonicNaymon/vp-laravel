@@ -39,6 +39,23 @@ class User extends Authenticatable
             $this->attributes['password'] = app('hash')->needsRehash($input) ? Hash::make($input) : $input;
     }
     
+    public function getFullName(){
+        
+        if (strlen($this->suffix) != 0)
+        {
+            $fullName = $this->firstname. " ". $this->suffix. " ". $this->lastname;
+        }
+        else
+        {
+            $fullName = $this->firstname. " ". $this->lastname;
+        }
+        return ucwords($fullName);
+    }
+    
+    public function getFullStreet()
+    {
+        return ucfirst($this->street_name . " ". $this->street_number);
+    }
 
     /**
      * Set to null if empty

@@ -7,7 +7,23 @@
             <div class="panel-heading">@lang('quickadmin.qa_dashboard')</div>
 
             <div class="panel-body">
-                Welcome, {{Auth::user()->firstname}}
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                    <p class="card-text h1">Welkom, {{Auth::user()->getFullname()}}</p>
+                                    <br />
+                                    <p class="card-text">Telefoonnummer: {{Auth::user()->phone_number}}</p>
+                                    <p class="card-text">Email adress: {{Auth::user()->email}}</p>
+                                    <p class="card-text">Woonplaats: {{Auth::user()->postalcode}}, {{Auth::user()->city}}</p>
+                                    <p class="card-text">Adress: {{Auth::user()->getFullStreet()}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
